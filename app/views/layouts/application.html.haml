@@ -10,9 +10,9 @@
       = image_tag 'logo.png', class: 'logo'
       %nav
         %ul.menu_main
-          %li Accueil
-          %li Présentation
-          %li Membres
+          %li=link_to 'Accueil', root_path
+          %li=link_to 'Présentation', presentation_path
+          %li=link_to 'Membres', membres_path
           %li Presse
           %li Contact
 
