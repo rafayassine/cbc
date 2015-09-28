@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Cbc
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      = image_tag 'logo.png', class: 'logo'
+      %nav
+        %ul.menu_main
+          %li Accueil
+          %li Présentation
+          %li Membres
+          %li Presse
+          %li Contact
+
+    = yield
