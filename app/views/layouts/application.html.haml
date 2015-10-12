@@ -4,16 +4,19 @@
     %title Cbc
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %link{href: 'https://fonts.googleapis.com/css?family=Kaushan+Script', rel: 'stylesheet', type: 'text/css'}
     = csrf_meta_tags
   %body
     %header
-      = image_tag 'logo.png', class: 'logo'
+      = image_tag 'logo_transparent.png', class: 'logo'
       %nav
         %ul.menu_main
           %li=link_to 'Accueil', root_path
           %li=link_to 'Présentation', presentation_path
           %li=link_to 'Membres', membres_path
-          %li Presse
+          %li=link_to 'Presse', presse_path
+          -# %li Presse
           %li Contact
-
-    = yield
+    .content
+      = yield
+      = render('layouts/footer')

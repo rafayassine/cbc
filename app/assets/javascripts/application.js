@@ -12,5 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require owl.carousel
 //= require_tree .
+
+$(document).ready(function(){
+  $("#gallery").justifiedGallery().on('jg.complete', function () {
+    $(this).find('a').colorbox({
+        maxWidth : '80%',
+        maxHeight : '80%',
+        opacity : 0.8,
+        transition : 'elastic',
+        current : ''
+    });
+});
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    autoPlay : 3500,
+    pagination : false
+  });
+});

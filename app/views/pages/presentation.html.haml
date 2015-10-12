@@ -1,6 +1,15 @@
 =image_tag 'presentation', class: 'home-cover'
 .infos
   %h1 Qui sommes-nous ?
-  .text
-    %p Le Chinese Business Club, créé à Paris par Harold Parisot, a pour vocation de développer et renforcer les liens économiques et amicaux entre la Chine et la France et de multiplier les investissements bilatéraux. La plupart des sociétés chinoises sont présentes aux déjeuners officiels du Chinese Business Club. Tous les secteurs d'activités sont concernés: univers du luxe, agroalimentaire, laboratoires pharmaceutiques, aéronautique, industrie lourde, tourisme, …
-    %p Sont également présents des ambassadeurs de pays africains et européens, des fonds d'investissements chinois, des agences réceptives spécialisées dans les riches touristes asiatiques en France, des diplomates et de nombreux conseillers du Consulat et de l'Ambassadeur de Chine. Par son influence, le Chinese Business Club joue depuis sa création en 2012 un rôle décideur majeur dans la coopération économique franco-chinoise.
+  .text.presentation
+    .row
+      .col-md-3.col-md-offset-1
+        .owl-carousel
+          - (1..69).each do |x|
+            = image_tag x.to_s
+      .col-md-6
+        %p Le Chinese Business Club, créé à Paris par Harold Parisot, a pour vocation de développer et renforcer les liens économiques et amicaux entre la Chine et la France et de multiplier les investissements bilatéraux. La plupart des sociétés chinoises sont présentes aux déjeuners officiels du Chinese Business Club. Tous les secteurs d'activités sont concernés: univers du luxe, agroalimentaire, laboratoires pharmaceutiques, aéronautique, industrie lourde, tourisme, …
+        %br
+        %br
+        %br
+        %p Sont également présents des ambassadeurs de pays africains et européens, des fonds d'investissements chinois, des agences réceptives spécialisées dans les riches touristes asiatiques en France, des diplomates et de nombreux conseillers du Consulat et de l'Ambassadeur de Chine. Par son influence, le Chinese Business Club joue depuis sa création en 2012 un rôle décideur majeur dans la coopération économique franco-chinoise.

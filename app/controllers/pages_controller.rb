@@ -13,7 +13,7 @@ class PagesController < ActionController::Base
   end
 
   def presse
-
+    @source_path = Rails.root.join('app', 'assets', 'images', 'presse')
   end
 
   def contact

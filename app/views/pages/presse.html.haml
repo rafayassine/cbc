@@ -1,0 +1,6 @@
+.infos
+  .text
+    %h1 Les articles de presse
+    #gallery
+      - Dir.glob("#{@source_path}/*.jpg").each do |press_image|
+        = link_to image_tag('presse/' + File.basename(asset_path(press_image))), 'assets/presse/' + File.basename(asset_path(press_image)), rel: 'example1'

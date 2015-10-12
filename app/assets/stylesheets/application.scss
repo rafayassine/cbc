@@ -12,20 +12,75 @@
  *
  *= require_tree .
  *= require_self
+ *= require owl.carousel
+ *= require owl.theme
  */
+body {
+  // background-color: ;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  color: #D03832;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline !important;
+}
+
+h2, h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr.line {
+  color: #D03832;
+  background: #D03832;
+  height: 1px;
+  width: 35%;
+  margin-bottom: 50px;
+}
+.content {
+  // border: 1px solid black;
+  font-family: Futura;
+  font-size: 16px;
+  width: 95%;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: justify;
+  // background-color: #E6E5E5;
+  p {
+    // font-family: 'Futura';
+    font-weight: lighter;
+  }
+}
 
 header {
   text-align: center;
   .logo {
-    text-align: center;
-    padding-bottom: 35px;
-    margin-bottom: 0;
-    max-width: 100%;
-    margin-top: 46px;
-    border-bottom: 2px solid #e9e7df;
+    // text-align: center;
+    // padding-bottom: 35px;
+    // margin-bottom: 0;
+    // max-width: 100%;
+    width: 200px;
+    // margin-top: 46px;
+    // border-bottom: 2px solid black;
+    margin: 30px 0px 50px 50px;
+    float: left;
   }
   .menu_main {
-    margin: 0;
+    // margin: 0;
+    margin: 45px 50px 50px 50px;
+    font-weight: lighter;
+    font-size: 16px;
+    float: right;
     padding: 0;
     list-style-type: none;
     display: inline-block;
@@ -40,24 +95,55 @@ header {
 }
 
 .home-cover {
-  // width: 100%;
-  width: 90%;
+  width: 100%;
+  // width: 80%;
+  height: 345px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 .infos {
-  width: 90%;
+  // width: 80%;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.text {
+.text.membres {
   img {
     height: 150px;
-    // border: 1px solid #cccccc;
+    margin: 5px 5px 15px 5px;
+    border: 1px solid #cccccc;
+    // padding-left: 130px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
+}
+
+.presentation {
+  margin-left: 50px;
+}
+
+footer {
+  padding: 80px 0 50px 0;
+  background-color: #E6E5E5;
+  margin-top: 100px;
+}
+
+.image-container {
+  background-image: url('home-cover');
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:250px;
+  height:250px;
+  // margin-right:
+}
+
+.blank {
+  background-color: white;
+  height: 250px;
 }
