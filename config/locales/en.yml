@@ -1,23 +1,25 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home: Home
+  presentation: Presentation
+  members: Members
+  press: Press
+  contact: Contact
+  cbc: The Chinese Business Club
+  develop_network: 'Develop your French-Chinese network by joining the Chinese Business Club, a great platform for your business. Chinese Business Club serves for French and Chinese politicians, diplomats, business leaders and entrepreneurs. Networking luncheon dedicated to members is held in Paris once every two months.'
+  contact_us: Contact Us
+  press_articles: Press Articles
+  who_we_are: Who are we?
+  about_cbc: "Chinese Business Club, created in Paris by Harold Parisot, aims to develop and strengthen economics and friendly link between China and France and increase bilateral investments. Most Chinese companies are present during these official lunches of the Chinese Business Club.All areas are concerned: tourism, agribusiness, pharmaceutical, aerospace, heavy industry, luxury, … Moreover, french Ministers, influential journalists, ambassadors from Africa, Chinese investment funds, CEO’s and leaders, diplomats and many advisors of Chinese Ambassador are also present."
+  official_members: Official Members
+  links: Links
+  first_name: First Name
+  last_name: Last Name
+  email: Email
+  subject: Subject
+  phone: Phone Number
+  function: Function
+  message: Message
+  company: Company
+  submit: Send
+  harold_parisot: Harold Parisot
+  address: 23, rue Balzac, 75008 Paris FRANCE

@@ -20,4 +20,10 @@ class PagesController < ActionController::Base
 
   end
 
+  def send_mail
+    @content = params
+    ContactMailer.contact_email(@content).deliver_now
+    redirect_to contact_path, notice: 'Merci, votre message a bien été envoyé.'
+  end
+
 end

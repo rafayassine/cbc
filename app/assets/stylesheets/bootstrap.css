@@ -3452,7 +3452,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-cbc {
-  border-radius: 0px !important;
+  /*border-radius: 0px !important;*/
   color: #fff;
   background-color: #D03832;
   border-color: #d43f3a;

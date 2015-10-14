@@ -8,15 +8,17 @@
     = csrf_meta_tags
   %body
     %header
-      = image_tag 'logo_transparent.png', class: 'logo'
+      = link_to (image_tag 'logo_transparent.png'), root_path, class: 'logo'
       %nav
         %ul.menu_main
-          %li=link_to 'Accueil', root_path
-          %li=link_to 'Présentation', presentation_path
-          %li=link_to 'Membres', membres_path
-          %li=link_to 'Presse', presse_path
-          -# %li Presse
-          %li Contact
+          %li=link_to t('home'), root_path
+          %li=link_to t('presentation'), presentation_path
+          %li=link_to t('members'), membres_path
+          %li=link_to t('press'), presse_path
+          %li=link_to t('contact'), contact_path
+          %li{style:'margin-right:0px;'}= link_to image_tag('fr.png', size: '20x20'), params.merge(locale: "fr")
+          %li{style:'margin-right:0px;'}= link_to image_tag('en.png', size: '20x20'), root_path(locale: :en)
+          %li{style:'margin-right:0px;'}= link_to image_tag('cn.png', size: '20x20'), root_path(locale: :'zh-CN')
     .content
       = yield
       = render('layouts/footer')
