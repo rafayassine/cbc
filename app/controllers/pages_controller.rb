@@ -1,4 +1,4 @@
-class PagesController < ActionController::Base
+class PagesController < ApplicationController
   layout 'application'
   def index
 
@@ -9,6 +9,10 @@ class PagesController < ActionController::Base
   end
 
   def membres
+
+  end
+
+  def comite
 
   end
 

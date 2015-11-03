@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Cbc
+    %title Chinese Business Club
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     %link{href: 'https://fonts.googleapis.com/css?family=Kaushan+Script', rel: 'stylesheet', type: 'text/css'}
@@ -9,10 +9,12 @@
   %body
     %header
       = link_to (image_tag 'logo_transparent.png'), root_path, class: 'logo'
+
       %nav
         %ul.menu_main
           %li=link_to t('home'), root_path
           %li=link_to t('presentation'), presentation_path
+          %li=link_to t('steering_committee'), comite_path
           %li=link_to t('members'), membres_path
           %li=link_to t('press'), presse_path
           %li=link_to t('contact'), contact_path

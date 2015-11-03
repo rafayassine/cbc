@@ -8,4 +8,4 @@
           - (1..69).each do |x|
             = image_tag x.to_s
       .col-md-6
-        %p=t('about_cbc')
+        %p.harold=t('about_cbc', link: link_to("Harold Parisot", "https://fr.linkedin.com/in/haroldparisot", target: '_blank')).html_safe

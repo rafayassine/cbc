@@ -4,12 +4,14 @@ fr:
   members: Membres
   press: Presse
   contact: Contact
+  steering_committee: Comité de Pilotage
   cbc: Le Chinese Business Club
-  develop_network: "Développez votre réseau franco-chinois en devenant membre du Chinese Business Club. Véritable plateforme du lobbying, le Chinese Business Club réunit à Paris, politiques, diplomates, investisseurs, dirigeants et chefs d'entreprises français et chinois."
+  livre_dor: "Livre d'or"
+  develop_network: "Développez votre réseau franco-chinois en devenant membre du Chinese Business Club. Véritable plateforme de lobbying, le Chinese Business Club réunit à Paris, politiques, diplomates, investisseurs, dirigeants et chefs d'entreprises français et chinois."
   contact_us: Nous contacter
   press_articles: Les articles de presse
   who_we_are: Qui sommes-nous ?
-  about_cbc: "Le Chinese Business Club, créé à Paris par Harold Parisot, a pour vocation de développer et renforcer les liens économiques et amicaux entre la Chine et la France et de multiplier les investissements bilatéraux. La plupart des sociétés chinoises sont présentes aux déjeuners officiels du Chinese Business Club. Tous les secteurs d'activités sont concernés: univers du luxe, agroalimentaire, laboratoires pharmaceutiques, aéronautique, industrie lourde, tourisme, … Sont également présents des ambassadeurs de pays africains et européens, des fonds d'investissements chinois, des agences réceptives spécialisées dans les riches touristes asiatiques en France, des diplomates et de nombreux conseillers du Consulat et de l'Ambassadeur de Chine. Par son influence, le Chinese Business Club joue depuis sa création en 2012 un rôle décideur majeur dans la coopération économique franco-chinoise."
+  about_cbc: "Le Chinese Business Club, créé à Paris par %{link}, a pour vocation de développer et renforcer les liens économiques et amicaux entre la Chine et la France et de multiplier les investissements bilatéraux. La plupart des sociétés chinoises sont présentes aux déjeuners officiels du Chinese Business Club. Tous les secteurs d'activités sont concernés: univers du luxe, agroalimentaire, laboratoires pharmaceutiques, aéronautique, industrie lourde, tourisme, … Sont également présents des ambassadeurs de pays africains et européens, des fonds d'investissements chinois, des agences réceptives spécialisées dans les riches touristes asiatiques en France, des diplomates et de nombreux conseillers du Consulat et de l'Ambassadeur de Chine. Par son influence, le Chinese Business Club joue depuis sa création en 2012 un rôle décideur majeur dans la coopération économique franco-chinoise."
   official_members: Membres officiels
   links: Liens
   first_name: Prénom
@@ -23,3 +25,21 @@ fr:
   submit: Envoyer
   harold_parisot: Harold Parisot
   address: 23, rue Balzac, 75008 Paris FRANCE
+  nicolas_sarkozy: "'Je souhaite vous remercier très chaleureusement pour le déjeuner du Chinese Business Club. C'est avec un plaisir sincère que j'ai échangé avec la communauté chinoise et fait partager ma vision de la place de la Chine dans le monde. Enfin, cette rencontre a été pour moi l'occasion de réaffirmer mon amitié pour ce pays et toute la communauté asiatique en France à laquelle je suis particulièrement attaché depuis de longues années.' Président Nicolas SARKOZY"
+  blabla: "HEY"
+  mingpo_cai: "'Un grand Bravo pour la création de ce lieu d'échange incontournable !  Vive l'amitié franco chinoise' Mingpo CAI, PDG Cathay Capital"
+  laurent_dassaut: "'Le rapprochement des idées et des moyens grâce au Chinese Business Club favorise et renforce la relation pérenne qui existe depuis plusieurs siècles entre nos deux pays. Merci au Chinese Business Club pour votre action, vos efforts et vos convictions.' Laurent Dassault, Groupe Dassault"
+  renaud_donnedieu_de_vabres: "'L’énergie du Président Harold Parisot est à la mesure du défi de la réussite franco-chinoise. Bravo' Renaud DONNEDIEU DE VABRES, Ministre de la Culture"
+  roland_dumas: "'Il se dit beaucoup de choses aux déjeuners du Chinese Business Club' Roland Dumas, Ministre des Affaires Etrangères"
+  louis_gallois: "'Le déjeuner du Chinese Business Club est pour moi une belle occasion de contacts utiles. Un grand merci pour votre activité au service de l’intensité et de la qualité des relations franco-chinoises.' Louis GALLOIS, PSA Peugeot Citroën"
+  robert_hossen: "'Je suis venu, j’ai vu, très ému et admirablement bien reçu au Chinese Business Club !' Robert HOSSEIN, Réalisateur et producteur"
+  jean_david_levitte: "'Bravo et Bonne Chance au Chinese Business Club qui mérite un immense succès !' Jean-David LEVITTE, Ambassadeur de France"
+  li_li: "'Félicitations pour les beaux évènements du Club. Le meilleur pour le Chinese Club et les affaires entre les sociétés chinoises et françaises.' Li LI, DG ICBC BANK"
+  emmanuel_macron: "'Merci pour ce déjeuner et cette discussion libre sur les relations entre la Chine et la France. Je reste très attaché à cette relation. Amitié' Emmanuel MACRON, Ministre de l’Economie"
+  thierry_mariani: "'Merci au Chinese Business Club de contribuer efficacement au dialogue entre nos deux Etats et ainsi de favoriser notre coopération.' Thierry MARIANI, Député des Français de l Etranger"
+  frederic_mitterand: "'Avec toute la sympathie d’un amoureux de la Chine depuis l’enfance et le Lotus Bleu' Frédéric MITTERRAND,  Ministre de la Culture"
+  jean_pierre_raffarin: "'Comment faire pour développer du business en Chine ? Il faut aimer les chinois' Jean-Pierre RAFFARIN, Premier Ministre"
+  kai_song: "'Le Chinese Business Club a construit une plateforme d’échange et de communication efficace pour les sociétés de nos deux pays, on vous souhaite plein de succès !' Kai SONG, DG Huawei"
+  hsueh_sheng_wang: "'Félicitation pour le chinesse business club qui œuvre pour le rapprochement franco-chinois.' Hsueh Sheng WANG, PDG d Erasia"
+  qide_yu: "'Le Chinese Business Club représente une excellente plateforme de communication et d'échanges commerciaux entre les entreprises Chinoises et Françaises.' Qide YU, DG ICBC Bank"
+  jian-fang_zhou: "'Grand succès du Club dans les échanges entre la France et la Chine !' Jian-Fang ZHOU, Président de l’Association des Agences de voyages chinoises en France"

@@ -134,6 +134,7 @@ header {
     border: 1px solid #cccccc;
     // padding-left: 130px;
     padding-left: 75px;
+    width: 300px;
     padding-right: 75px;
   }
 }
@@ -166,4 +167,14 @@ footer {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.harold {
+  a {
+    color:blue;
+  }
+}
+
+.comite p {
+  text-align: center;
 }
