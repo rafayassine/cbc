@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get :membres, to: 'pages#membres'
     # get :comite, to: 'pages#comite'
     get :presse, to: 'pages#presse'
+    get :livredor, to: 'pages#livredor'
     get :contact, to: 'pages#contact'
     post :send_mail, to: 'pages#send_mail'
   end

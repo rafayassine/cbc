@@ -12,6 +12,10 @@ class PagesController < ApplicationController
 
   end
 
+  def livredor
+
+  end
+
   def comite
 
   end
