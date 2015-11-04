@@ -10,34 +10,6 @@
 =image_tag 'home-cover-2', class: 'home-cover'
 
 .infos.home
-  .row
-    .col-md-8.col-md-offset-2
-      %h2=t('contact_us')
-      - if flash[:notice]
-        #notice.alert.alert-success= flash[:notice]
-      = form_tag(send_mail_path) do
-        = label_tag t('last_name')
-        = text_field_tag 'last_name', nil, class: 'form-control', required: true
-        = label_tag t('first_name')
-        = text_field_tag 'first_name', nil, class: 'form-control', required: true
-        = label_tag t('email')
-        = email_field_tag 'email', nil, class: 'form-control', required: true
-        = label_tag t('subject')
-        = text_field_tag 'subject', nil, class: 'form-control', required: true
-        = label_tag t('phone')
-        = text_field_tag 'phone', nil, class: 'form-control'
-        = label_tag t('function')
-        = text_field_tag 'function', nil, class: 'form-control'
-        = label_tag t('company')
-        = text_field_tag 'company', nil, class: 'form-control'
-        = label_tag t('message')
-        = text_area_tag 'message', nil, rows: 8, class: 'form-control', required: true
-        %br
-        = submit_tag t('submit'), class: 'btn btn-cbc pull-right'
-  %br
-  %br
-  %br
-  %br
   .row.golden_book
     .col-md-8.col-md-offset-2
       %h2=t('livre_dor')
@@ -90,3 +62,31 @@
       %br
       %br
       %p=t('jian-fang_zhou')
+  %br
+  %br
+  %br
+  %br
+  .row
+    .col-md-8.col-md-offset-2
+      %h2=t('contact_us')
+      - if flash[:notice]
+        #notice.alert.alert-success= flash[:notice]
+      = form_tag(send_mail_path) do
+        = label_tag t('last_name')
+        = text_field_tag 'last_name', nil, class: 'form-control', required: true
+        = label_tag t('first_name')
+        = text_field_tag 'first_name', nil, class: 'form-control', required: true
+        = label_tag t('email')
+        = email_field_tag 'email', nil, class: 'form-control', required: true
+        = label_tag t('subject')
+        = text_field_tag 'subject', nil, class: 'form-control', required: true
+        = label_tag t('phone')
+        = text_field_tag 'phone', nil, class: 'form-control'
+        = label_tag t('function')
+        = text_field_tag 'function', nil, class: 'form-control'
+        = label_tag t('company')
+        = text_field_tag 'company', nil, class: 'form-control'
+        = label_tag t('message')
+        = text_area_tag 'message', nil, rows: 8, class: 'form-control', required: true
+        %br
+        = submit_tag t('submit'), class: 'btn btn-cbc pull-right'
