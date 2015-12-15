@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def presentation
-
+    @source_path = Rails.root.join('app', 'assets', 'images', 'presentation')
   end
 
   def membres

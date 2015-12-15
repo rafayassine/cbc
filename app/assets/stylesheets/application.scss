@@ -61,7 +61,14 @@ hr.line {
     font-weight: lighter;
   }
 }
-
+.images {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  a {
+    display: inline;
+  }
+}
 header {
   text-align: center;
   .logo {
