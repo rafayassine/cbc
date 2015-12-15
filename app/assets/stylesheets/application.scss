@@ -62,9 +62,11 @@ hr.line {
   }
 }
 .images {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   display: block;
+  img {
+    display: inline;
+  }
   a {
     display: inline;
   }
