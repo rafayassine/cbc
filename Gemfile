@@ -16,7 +16,8 @@ gem 'haml'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'owlcarousel-rails'
-
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -29,8 +30,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'activeadmin', github: 'activeadmin'
+gem 'active_skin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

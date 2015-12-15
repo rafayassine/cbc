@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   scope "(:locale)", locale: /en|fr|zh-CN/ do
     root 'pages#index'
     get :presentation, to: 'pages#presentation'
