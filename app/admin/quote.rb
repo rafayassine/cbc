@@ -37,15 +37,15 @@ end
 
 show do
   attributes_table do
-    column :text_fr
-    column :text_en
-    column :text_cn
-    column :author_fr
-    column :author_en
-    column :author_cn
-    column :author_statut_fr
-    column :author_statut_en
-    column :author_statut_cn
+    row :text_fr
+    row :text_en
+    row :text_cn
+    row :author_fr
+    row :author_en
+    row :author_cn
+    row :author_statut_fr
+    row :author_statut_en
+    row :author_statut_cn
   end
   # active_admin_comments
 end
