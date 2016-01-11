@@ -9,11 +9,11 @@ class PagesController < ApplicationController
   end
 
   def membres
-
+    @members = Member.all.order(name: :asc)
   end
 
   def livredor
-
+    @quotes = Quote.all.order(author_fr: :asc)
   end
 
   def comite
