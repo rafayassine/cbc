@@ -7,7 +7,8 @@
         .owl-carousel
           -# - (1..77).to_a.shuffle.each do |x|
           -#   = image_tag x.to_s
-          - Dir.glob("#{@source_path}/*.jpg").each do |press_image|
-            = image_tag('presentation/' + File.basename(asset_path(press_image)))
+          -# - Dir.glob("#{@source_path}/*.jpg").each do |press_image|
+          - @images.each do |press_image|
+            = image_tag('http://cbc-assets.s3.amazonaws.com/' + press_image)
       .col-md-6
         %p.harold=t('about_cbc', link: link_to("Harold PARISOT", "https://fr.linkedin.com/in/haroldparisot", target: '_blank')).html_safe
