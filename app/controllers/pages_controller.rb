@@ -44,6 +44,10 @@ class PagesController < ApplicationController
 
   end
 
+  def grandes_fortunes
+    @fortunes = Fortune.all.order(global_ranking: :asc)
+  end
+
   def presse
     @source_path = Rails.root.join('app', 'assets', 'images', 'presse')
   end

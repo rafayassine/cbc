@@ -1,0 +1,38 @@
+-# .image-container
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+=image_tag 'home-cover-2', class: 'home-cover'
+
+.infos.home
+  .row.golden_book
+    .col-md-8.col-md-offset-2
+      %h2=t('ranking_title')
+
+      - @fortunes.each_with_index do |fortune, i|
+        %p="#{i}/ #{fortune.first_name} #{fortune.last_name}"
+        - if I18n.locale == :fr
+          %p= fortune.description_fr
+          %p= fortune.age
+          %p= fortune.money_fr
+          %br
+        - elsif I18n.locale == :en
+          %p= fortune.description_en
+          %p= fortune.age
+          %p= fortune.money_en
+          %br
+        - elsif I18n.locale == :'zh-CN'
+          %p= fortune.description_cn
+          %p= fortune.age
+          %p= fortune.money_cn
+          %br
+        %p= fortune.global_ranking
+  %br
+  %br
+  %br
+  %br

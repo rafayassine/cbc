@@ -18,6 +18,7 @@
           %li=link_to t('members'), membres_path
           %li=link_to t('press'), presse_path
           %li=link_to t('livre_dor'), livredor_path
+          %li=link_to t('ranking'), grandes_fortunes_path
           %li=link_to t('contact'), contact_path
           %li{style:'margin-right:0px;'}= link_to image_tag('fr.png', size: '20x20'), params.merge(locale: "fr")
           %li{style:'margin-right:0px;'}= link_to image_tag('en.png', size: '20x20'), root_path(locale: :en)
