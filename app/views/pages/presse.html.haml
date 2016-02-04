@@ -13,35 +13,12 @@
     %h1=t('press_articles')
     %br
     #gallery
-      - Dir.glob("#{@source_path}/*.jpg").each do |press_image|
-        = link_to image_tag('presse/' + File.basename(asset_path(press_image))), 'public/images/presse/' + asset_url(press_image), rel: 'example1'
+      - @articles.each do |press_article|
+        = link_to image_tag(press_article.file), press_article.file.url, rel: 'example1'
     %br
     %br
     %br
     %h1=t('links')
     %ul
-      %li=link_to '2015-06-19 - Phoenix TV "Reportage de la chaine chinoise Phoenix TV sur le Chinese Business Club"', 'http://www.dailymotion.com/video/x2ukqj9_reportage-de-la-chaine-chinoise-phoenix-tv-sur-le-chinese-business-club_news', target: '_blank'
-      %li=link_to '2015-06-18 - Xineurope "经济部长马克隆与法华商界领袖面对面，重申法国要将改革进行到底"', 'http://www.xineurope.com/article-6685-1.html', target: '_blank'
-      %li=link_to '2015-06-18 - Nouvelles d’Europe "马克隆：欢迎中企来法投资 法国还可以做得更好"', 'http://ouzhou.oushinet.com/france/20150618/196685.html', target: '_blank'
-      %li=link_to '2015-06-19 - WeChat "经济部长马克隆与法华商界领袖面对面，重申法国要将改革进行到底"', 'http://mp.weixin.qq.com/s?__biz=MjM5MTk1MDg2Nw==&mid=210949056&idx=2&sn=9999825b1c62ef4210f4cd6b0f0271bb&scene=1&from=singlemessage&isappinstalled=0#rd', target: '_blank'
-      %li=link_to '2015-06-18 - i TELE "Quand la France fait les yeux doux aux investisseurs chinois"', 'http://www.itele.fr/economie/video/quand-la-france-fait-les-yeux-doux-aux-investisseurs-chinois-128332', target: '_blank'
-      %li=link_to '2015-04-21 - News China "法国前总理：与中国合作要先学会爱中国"', 'http://news.china.com.cn/world/2015-04/21/content_35379840.htm', target: '_blank'
-      %li=link_to '2015-04-18 - China Youth Daily "法国前总理拉法兰：与中国合作要先学会爱中国"', 'http://zqb.cyol.com/html/2015-04/18/nw.D110000zgqnb_20150418_1-03.htm', target: '_blank'
-      %li=link_to '2015-04-11 - Xineurope "拉法兰：想跟中国合作，先爱上中国！"', 'http://www.xineurope.com/article-6216-1.html', target: '_blank'
-      %li=link_to '2015-2-10 - Xineurope "法华商业俱乐部2015首次交流午宴：着眼长远，合作双赢 "', 'http://www.xineurope.com/article-5889-1.html', target: '_blank'
-      %li=link_to '2015-02-06 - Harold Parisot au centre du gotha franco-chinois', 'http://fr.gbtimes.com/china/harold-parisot-au-centre-du-gotha-franco-chinois', target: '_blank'
-      %li=link_to '2013-12-14 - Radio Chine Internationale (Version Chinoise) - La réunion du club', 'http://gb.cri.cn/42071/2013/12/14/3245s4356782.htm', target: '_blank'
-      %li=link_to '2014-06-17 - Six Paris Un groupe Chinois rachète l’hôtel Marriott des Champs-Élysées pour 344,5 millions d’euros. Le journaliste du Six Paris interview M. Harold PARISOT à ce sujet.', 'http://www.6paris.com/2014/06/19/%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E%E9%A6%99%E8%A1%97%E9%BB%84%E9%87%91%E5%9C%B0%E6%AE%B5%E5%A5%A2%E5%8D%8E%E9%85%92%E5%BA%97%E8%A2%AB%E4%B8%AD%E5%9B%BD%E9%9B%86%E5%9B%A2%E6%96%A5%E8%B5%843%E4%BA%BF4450%E4%B8%87%E6%AC%A7%E5%85%83%E6%94%B6%E8%B4%AD/', target: '_blank'
-      %li=link_to "2013-12-13 - L'Opinion 'Harold Parisot relais de la Chine à Paris'", 'http://www.lopinion.fr/13-decembre-2013/harold-parisot-relais-chine-a-paris-7148', target: '_blank'
-      %li=link_to '2013-11 -12 - Les Echos', 'http://www.lesechos.fr/12/11/2013/LesEchos/21561-059-ECH_l-agent-immobilier-qui-murmure-a-l-oreille-des-millionnaires.htm?texte=off%20market', target: '_blank'
-      %li=link_to 'BFM Business', 'http://www.bfmtv.com/grille/bfmbusiness/podcast-radio/19204/', target: '_blank'
-      %li=link_to 'http://french.cri.cn/720/2012/11/29/542s304184.htm', 'http://french.cri.cn/720/2012/11/29/542s304184.htm', target: '_blank'
-      %li=link_to '2012-11-29 - Radio Chine Internationale "Chinese Business Club se réunissait à Paris"', 'http://www.xineurope.com/article-5559-1.html', target: '_blank'
-      %li=link_to 'Interview BFM Business octobre 2015 (à partir de la 35ème minute)', 'http://bfmbusiness.bfmtv.com/mediaplayer/audio/bfm-1010-chine-hebdo-261198.html', target: '_blank'
-      %li=link_to 'Egalement une interview sur le plateau de LCI', 'http://www.wat.tv/video/invite-matinale-harold-parisot-7kuuj_6jdf7_.html ', target: '_blank'
-      %li=link_to 'ECONOMIC DAILY CHINA', 'http://intl.ce.cn/specials/zxgjzh/201510/08/t20151008_6651212.shtml', target: '_blank'
-      %li=link_to 'QUOTIDIEN DU PEUPLE', 'http://world.people.com.cn/n/2015/1006/c1002-27664792.html', target: '_blank'
-      %li=link_to 'XINEUROPE', 'http://www.xineurope.com/portal.php?mod=view&aid=7515', target: '_blank'
-      %li=link_to 'HUASHE', 'http://huashe.oushinet.com/qsnews/20150907/204358.html?from=singlemessage&isappinstalled=0', target: '_blank'
-      %li=link_to 'TOUTIAO', 'http://toutiao.com/i6191687818135683586/?tt_from=weixin&utm_campaign=client_share&from=singlemessage&app=news_article&utm_source=weixin&isappinstalled=0&iid=2997880902&utm_medium=toutiao_ios&wxshare_count=1', target: '_blank'
-      %li=link_to 'WEIXIN', 'http://mp.weixin.qq.com/s?__biz=MjM5MTc4OTk1Ng==&mid=208158736&idx=2&sn=1d5eafa72cefcc101dac1f1bd87c62ed&scene=5&srcid=0904y0uy0TKoFQHrFgwjSltv#rd', target: '_blank'
+      - @links.each do |press_link|
+        %li=link_to press_link.title, press_link.url, target: '_blank'
