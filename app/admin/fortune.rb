@@ -25,16 +25,15 @@ end
 form do |f|
   inputs 'Details' do
     input :first_name
-    input :first_name_cn
-    input :last_name
     input :description_fr
-    input :description_en
-    input :description_cn
     input :age
     input :money_fr
-    input :money_en
-    input :money_cn
     input :global_ranking
+    input :description_en
+    input :money_en
+    input :first_name_cn
+    input :description_cn
+    input :money_cn
   actions
   end
 end

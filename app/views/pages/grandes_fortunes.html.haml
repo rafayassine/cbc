@@ -15,7 +15,10 @@
       %h2=t('ranking_title')
 
       - @fortunes.each_with_index do |fortune, i|
-        %p="#{i}/ #{fortune.first_name} #{fortune.last_name}"
+        - if I18n.locale == :'zh-CN'
+          %p="#{i}/ #{fortune.first_name_cn}"
+        - else
+          %p="#{i}/ #{fortune.first_name_cn}"
         - if I18n.locale == :fr
           %p= fortune.description_fr
           %p= fortune.age
