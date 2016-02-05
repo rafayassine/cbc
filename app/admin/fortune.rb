@@ -3,12 +3,13 @@ ActiveAdmin.register Fortune do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :first_name, :last_name, :description_fr, :description_en, :description_cn, :age, :money_fr, :money_en, :money_cn, :global_ranking, :locale
+permit_params :first_name, :first_name_cn, :last_name, :description_fr, :description_en, :description_cn, :age, :money_fr, :money_en, :money_cn, :global_ranking, :locale
 #
 index do
   selectable_column
   id_column
   column :first_name
+  column :first_name_cn
   column :last_name
   column :description_fr
   column :description_en
@@ -24,6 +25,7 @@ end
 form do |f|
   inputs 'Details' do
     input :first_name
+    input :first_name_cn
     input :last_name
     input :description_fr
     input :description_en
@@ -40,6 +42,7 @@ end
 show do
   attributes_table do
     row :first_name
+    row :first_name_cn
     row :last_name
     row :description_fr
     row :description_en
