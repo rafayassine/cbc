@@ -16,25 +16,28 @@
 
       - @fortunes.each_with_index do |fortune, i|
         - if I18n.locale == :'zh-CN'
-          %p="#{i}/ #{fortune.first_name_cn}"
+          %p.author="#{i + 1}/ #{fortune.first_name_cn}"
         - else
-          %p="#{i}/ #{fortune.first_name_cn}"
+          %p.author="#{i + 1}/ #{fortune.first_name}"
         - if I18n.locale == :fr
           %p= fortune.description_fr
-          %p= fortune.age
-          %p= fortune.money_fr
+          %p= "Age : #{fortune.age}"
+          %p= "Fortune : #{fortune.money_fr}"
+          %p= "Classement: #{fortune.global_ranking}ème position"
           %br
         - elsif I18n.locale == :en
           %p= fortune.description_en
-          %p= fortune.age
-          %p= fortune.money_en
+          %p= "Age : #{fortune.age}"
+          %p= "Net Worth : #{fortune.money_en}"
+          %p= "World Ranking: #{fortune.global_ranking}th position"
           %br
         - elsif I18n.locale == :'zh-CN'
           %p= fortune.description_cn
-          %p= fortune.age
-          %p= fortune.money_cn
+          %p= "年龄 : #{fortune.age}  岁"
+          %p= "净资产 : #{fortune.money_cn}"
+          %p= "世界排名 : 第#{fortune.global_ranking}位"
           %br
-        %p= fortune.global_ranking
+
   %br
   %br
   %br
