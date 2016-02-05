@@ -12,8 +12,8 @@
 .infos.home
   .row.golden_book
     .col-md-8.col-md-offset-2
-      %h2=t('ranking_title')
-
+      %h2.h2ranking=t('ranking_title')
+      %br
       - @fortunes.each_with_index do |fortune, i|
         - if I18n.locale == :'zh-CN'
           %p.author="#{i + 1}/ #{fortune.first_name_cn}"
