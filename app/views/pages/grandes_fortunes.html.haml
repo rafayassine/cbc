@@ -10,7 +10,7 @@
 =image_tag 'home-cover-2', class: 'home-cover'
 
 .infos.home
-  .row.golden_book
+  .row.golden_book_fortunes
     .col-md-8.col-md-offset-2
       %h2.h2ranking=t('ranking_title')
       %br
@@ -20,23 +20,31 @@
         - else
           %p.author="#{i + 1}/ #{fortune.first_name}"
         - if I18n.locale == :fr
-          %p= simple_format(fortune.description_fr)
-          %p= "Age : #{fortune.age}"
-          %p= "Fortune : #{fortune.money_fr}"
-          %p= "Classement mondial: #{fortune.global_ranking}ème position"
+          = simple_format(fortune.description_fr, style: 'margin-bottom: 0px;')
+          = "Age : #{fortune.age}"
+          %br
+          = "Fortune : #{fortune.money_fr}"
+          %br
+          = "Classement mondial: #{fortune.global_ranking}ème position"
           %br
         - elsif I18n.locale == :en
-          %p= simple_format(fortune.description_en)
-          %p= "Age : #{fortune.age}"
-          %p= "Net Worth : #{fortune.money_en}"
-          %p= "World Ranking: #{fortune.global_ranking}th position"
+          = simple_format(fortune.description_en, style: 'margin-bottom: 0px;')
+          %br
+          = "Age : #{fortune.age}"
+          %br
+          = "Net Worth : #{fortune.money_en}"
+          %br
+          = "World Ranking: #{fortune.global_ranking}th position"
           %br
         - elsif I18n.locale == :'zh-CN'
-          %p= simple_format(fortune.description_cn)
-          %p= "年龄 : #{fortune.age}  岁"
-          %p= "净资产 : #{fortune.money_cn}"
-          %p= "世界排名 : 第#{fortune.global_ranking}位"
+          = simple_format(fortune.description_cn, style: 'margin-bottom: 0px;')
+          = "年龄 : #{fortune.age}  岁"
           %br
+          = "净资产 : #{fortune.money_cn}"
+          %br
+          = "世界排名 : 第#{fortune.global_ranking}位"
+          %br
+        %br
 
   %br
   %br
