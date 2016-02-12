@@ -31,7 +31,7 @@ gem 'aws-sdk'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'google-analytics-rails', '1.0.0'
 gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
