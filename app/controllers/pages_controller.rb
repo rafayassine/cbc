@@ -22,7 +22,7 @@ class PagesController < ApplicationController
     end
     bucket_name = 'cbc-assets'
     s3 = Aws::S3::Client.new(region:'eu-central-1')
-    resp = s3.list_objects(bucket: 'cbc-assets')
+    resp = s3.list_objects(bucket: 'cbc-assets', prefix: 'assets/')
     @images = []
     # resp.contents.each_with_index do |object, index|
     #   @images << object.key unless index == 0
@@ -56,6 +56,10 @@ class PagesController < ApplicationController
 
   def contact
 
+  end
+
+  def competitors
+    @competitors = Competitor.all.order(name_fr: :asc)
   end
 
   def send_mail

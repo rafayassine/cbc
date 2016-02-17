@@ -1,0 +1,42 @@
+-# .image-container
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+%br
+=image_tag 'home-cover-2', class: 'home-cover'
+
+.infos.home
+  .row.golden_book_fortunes
+    .col-md-8.col-md-offset-2
+      %h2.h2ranking=t('competitors')
+      %br
+      - @competitors.each do |competitor|
+        - if I18n.locale == :fr
+          - stuff = boldify_competitors(competitor.name_fr, I18n.locale)
+          %p
+            %span{style: 'font-weight:bold;'}= stuff.first_word
+            %span= stuff.remaining
+            %span{style: 'font-weight:bold;'}= stuff.last_word
+        - elsif I18n.locale == :en
+          - stuff = boldify_competitors(competitor.name_en, I18n.locale)
+          %p
+            %span{style: 'font-weight:bold;'}= stuff.first_word
+            %span= stuff.remaining
+            %span{style: 'font-weight:bold;'}= stuff.last_word
+        - elsif I18n.locale == :'zh-CN'
+          - stuff = boldify_competitors(competitor.name_cn, I18n.locale)
+          %p
+            %span{style: 'font-weight:bold;'}= stuff.first_word
+            %span= stuff.remaining
+            %span{style: 'font-weight:bold;'}= stuff.last_word
+
+        %br
+
+  %br
+  %br
+  %br
+  %br

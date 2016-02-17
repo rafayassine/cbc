@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get :grandes_fortunes, to: 'pages#grandes_fortunes'
     get :livredor, to: 'pages#livredor'
     get :contact, to: 'pages#contact'
+    get :concurrents, to: 'pages#competitors'
     post :send_mail, to: 'pages#send_mail'
   end
 end
