@@ -16,23 +16,32 @@
       %br
       - @competitors.each do |competitor|
         - if I18n.locale == :fr
-          - stuff = boldify_competitors(competitor.name_fr, I18n.locale)
-          %p
-            %span{style: 'font-weight:bold;'}= stuff.first_word
-            %span= stuff.remaining
-            %span{style: 'font-weight:bold;'}= stuff.last_word
+          - if competitor.name_fr.present?
+            - stuff = boldify_competitors(competitor.name_fr, I18n.locale)
+            %p
+              %span{style: 'font-weight:bold;'}=stuff.first_word
+              - if stuff.second_word
+                %span{style: 'font-weight:bold;'}=stuff.second_word
+              %span= stuff.remaining
+              %span{style: 'font-weight:bold;'}= stuff.last_word
         - elsif I18n.locale == :en
-          - stuff = boldify_competitors(competitor.name_en, I18n.locale)
-          %p
-            %span{style: 'font-weight:bold;'}= stuff.first_word
-            %span= stuff.remaining
-            %span{style: 'font-weight:bold;'}= stuff.last_word
+          - if competitor.name_en.present?
+            - stuff = boldify_competitors(competitor.name_en, I18n.locale)
+            %p
+              %span{style: 'font-weight:bold;'}=stuff.first_word
+              - if stuff.second_word
+                %span{style: 'font-weight:bold;'}=stuff.second_word
+              %span= stuff.remaining
+              %span{style: 'font-weight:bold;'}= stuff.last_word
         - elsif I18n.locale == :'zh-CN'
-          - stuff = boldify_competitors(competitor.name_cn, I18n.locale)
-          %p
-            %span{style: 'font-weight:bold;'}= stuff.first_word
-            %span= stuff.remaining
-            %span{style: 'font-weight:bold;'}= stuff.last_word
+          - if competitor.name_cn.present?
+            - stuff = boldify_competitors(competitor.name_cn, I18n.locale)
+            %p
+              %span{style: 'font-weight:bold;'}=stuff.first_word
+              - if stuff.second_word
+                %span{style: 'font-weight:bold;'}=stuff.second_word
+              %span= stuff.remaining
+              %span{style: 'font-weight:bold;'}= stuff.last_word
 
         %br
 
