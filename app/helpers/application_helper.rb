@@ -13,6 +13,8 @@ module ApplicationHelper
       second_word = "Kuaidi"
     elsif string_tab.index("Weibo")
       second_word = "Weibo"
+    elsif string_tab.index("Tudou")
+      second_word = "Tudou"
     end
 
     # if lang == :'zh-CN'
