@@ -72,6 +72,9 @@ hr.line {
   }
 }
 
+.gold_book p:not(.author) {
+  margin-bottom: 0px !important;
+}
 .golden_book_fortunes div {
   font-weight: lighter;
 }
@@ -204,7 +207,6 @@ footer {
 
 .author {
   font-weight: bold !important;
-  margin-bottom: 0px !important;
 }
 
 .h2ranking {
