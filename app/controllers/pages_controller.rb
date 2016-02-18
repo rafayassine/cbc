@@ -37,7 +37,7 @@ class PagesController < ApplicationController
   end
 
   def livredor
-    @quotes = Quote.all.order(author_fr: :asc)
+    @quotes = Quote.all.sort_by(&:inverse_author_name_fr)
   end
 
   def comite

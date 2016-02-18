@@ -5,4 +5,11 @@ class Quote < ActiveRecord::Base
     self.author_statut_en = author_statut_fr if author_statut_en.blank?
     self.author_statut_cn = author_statut_fr if author_statut_cn.blank?
   end
+
+  def inverse_author_name_fr
+    author_fr.split.reverse.join(" ")
+  end
+  def inverse_author_name_en
+    author_en.split.reverse.join(" ")
+  end
 end
