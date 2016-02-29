@@ -11,6 +11,9 @@ index do
   column :name_fr
   column :name_en
   column :name_cn
+  column :competitor_fr
+  column :competitor_en
+  column :competitor_cn
   actions
 end
 
@@ -19,15 +22,18 @@ form do |f|
     input :name_fr
     input :name_en
     input :name_cn
+    input :competitor_fr
+    input :competitor_en
+    input :competitor_cn
   end
   actions
 end
 
 show do
   attributes_table do
-    row :name_fr
-    row :name_en
-    row :name_cn
+    row :competitor_fr
+    row :competitor_en
+    row :competitor_cn
   end
   # active_admin_comments
 end

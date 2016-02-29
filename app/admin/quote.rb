@@ -15,8 +15,11 @@ index do
   column :author_en
   column :author_cn
   column :author_statut_fr
+  column :author_stalast_name_frtut_fr
   column :author_statut_en
+  column :last_name_en
   column :author_statut_cn
+  column :last_name_cn
   actions
 end
 
@@ -26,8 +29,11 @@ form do |f|
     input :text_en
     input :text_cn
     input :author_fr
+    input :last_name_fr
     input :author_en
+    input :last_name_en
     input :author_cn
+    input :last_name_cn
     input :author_statut_fr
     input :author_statut_en
     input :author_statut_cn
@@ -41,8 +47,11 @@ show do
     row :text_en
     row :text_cn
     row :author_fr
+    row :last_name_fr
     row :author_en
+    row :last_name_en
     row :author_cn
+    row :last_name_cn
     row :author_statut_fr
     row :author_statut_en
     row :author_statut_cn

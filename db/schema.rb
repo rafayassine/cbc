@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160217221820) do
+ActiveRecord::Schema.define(version: 20160229004059) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -50,8 +50,11 @@ ActiveRecord::Schema.define(version: 20160217221820) do
     t.string   "name_fr"
     t.string   "name_en"
     t.string   "name_cn"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "competitor_fr"
+    t.string   "competitor_en"
+    t.string   "competitor_cn"
   end
 
   create_table "fortunes", force: :cascade do |t|
@@ -114,6 +117,9 @@ ActiveRecord::Schema.define(version: 20160217221820) do
     t.string   "author_statut_cn"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.string   "last_name_fr"
+    t.string   "last_name_en"
+    t.string   "last_name_cn"
   end
 
 end
