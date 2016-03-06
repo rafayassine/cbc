@@ -22,8 +22,11 @@
               %span{style: 'font-weight:bold;'}=stuff.first_word
               - if stuff.second_word
                 %span{style: 'font-weight:bold;'}=stuff.second_word
-              %span= stuff.remaining
-              %span<= stuff.last_word
+              %span<= stuff.remaining
+              - if competitor.competitor_fr
+                %span<= stuff.last_word
+              - else
+                %span{style: 'font-weight:bold;'}= stuff.last_word
               %span{style: 'font-weight:bold;'}= competitor.competitor_fr
         - elsif I18n.locale == :en
           - if competitor.name_en.present?
