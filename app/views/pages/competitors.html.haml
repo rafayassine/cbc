@@ -23,7 +23,8 @@
               - if stuff.second_word
                 %span{style: 'font-weight:bold;'}=stuff.second_word
               %span= stuff.remaining
-              %span{style: 'font-weight:bold;'}= stuff.last_word
+              %span<= stuff.last_word
+              %span{style: 'font-weight:bold;'}= competitor.competitor_fr
         - elsif I18n.locale == :en
           - if competitor.name_en.present?
             - stuff = boldify_competitors(competitor.name_en, I18n.locale)

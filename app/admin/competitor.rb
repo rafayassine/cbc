@@ -3,7 +3,7 @@ ActiveAdmin.register Competitor do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name_fr, :name_en, :name_cn
+permit_params :name_fr, :name_en, :name_cn, :competitor_fr, :competitor_en
 #
 index do
   selectable_column
