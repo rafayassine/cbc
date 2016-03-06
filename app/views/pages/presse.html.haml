@@ -20,5 +20,7 @@
     %br
     %h1=t('links')
     %ul
+      %iframe{:style => "margin-right:auto; margin-left: auto;display:block;", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/5rCXGSId0_Y", :width => "560"}
+      %br
       - @links.each do |press_link|
         %li=link_to press_link.title, press_link.url, target: '_blank'
