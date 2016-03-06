@@ -3,7 +3,7 @@ ActiveAdmin.register Quote do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :text_fr, :text_en, :text_cn, :author_fr, :author_en, :author_cn, :author_statut_fr, :author_statut_en, :author_statut_cn
+permit_params :text_fr, :text_en, :text_cn, :author_fr, :last_name_fr ,:last_name_en, :last_name_cn, :author_en, :author_cn, :author_statut_fr, :author_statut_en, :author_statut_cn
 #
 index do
   selectable_column
